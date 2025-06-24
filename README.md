@@ -44,10 +44,10 @@ It allows you to perform basic arithmetic operations like addition, subtraction,
 - Use `<` to delete the last character.
 - Press `=` to get the result.
 
----
-
 ## Technologies Used
 
  - React JS (Functional Components + Hooks)
  - HTML/CSS for UI and layout
  - JavaScript for logic and evaluation
+
+---
