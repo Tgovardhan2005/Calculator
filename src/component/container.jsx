@@ -4,10 +4,21 @@ import Value_box from "./value_box";
 function Container(){
 
     const [number,setNumber]=useState("");
-    console.log(number);
 
-    var sum=0;
     function enterNumber(value){
+        if (number === "Error" || number === "Infinity") {
+            if (value === "C") {
+                setNumber("");
+                return;
+            } else if (value === "<") {
+                setNumber("");
+                return;
+            } else {
+                setNumber(value.toString());
+                return;
+            }
+        }
+        
         if(value=="="){
             answer();
         }else if(value=="C"){
@@ -15,22 +26,23 @@ function Container(){
         }else if(value=="<"){
             setNumber(number.slice(0,number.length-1));   
         }else{
-            setNumber(number+`${value}`);
+            if(value=="+" || value=="-" || value=="*" || value=="/"){
+                if(number!="" && number.charAt(number.length-1)!="+" && number.charAt(number.length-1)!="-"  && number.charAt(number.length-1)!="*"  && number.charAt(number.length-1)!="/" )
+                setNumber(number+`${value}`);
+            }else{
+                setNumber(number+`${value}`);
+            }
+            
         }
     }
     function answer(){
-        if(number.includes("+")){
-            var values=number.split("+")
-            setNumber(parseFloat(values[0])+parseFloat(values[1]).toFixed(4));
-        }else if(number.includes("-")){
-            var values=number.split("-")
-            setNumber(parseFloat(values[0])-parseFloat(values[1]).toFixed(4));
-        }else if(number.includes("*")){
-            var values=number.split("*")
-            setNumber(parseFloat(values[0])*parseFloat(values[1]).toFixed(4));
-        }else if(number.includes("/")){
-            var values=number.split("/")
-            setNumber(parseFloat(values[0])/parseFloat(values[1]).toFixed(4));
+        if(number === "" || "+-*/".includes(number.charAt(number.length - 1))){
+            return;
+        }
+        try{
+            setNumber(eval(number).toFixed(4));
+        }catch{
+            setNumber("Error")
         }
     }
     return(
