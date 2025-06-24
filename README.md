@@ -46,4 +46,8 @@ It allows you to perform basic arithmetic operations like addition, subtraction,
 
 ---
 
-**Made with React and CSS.**
+## Technologies Used
+
+ - React JS (Functional Components + Hooks)
+ - HTML/CSS for UI and layout
+ - JavaScript for logic and evaluation
