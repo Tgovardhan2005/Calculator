@@ -1,12 +1,49 @@
-# React + Vite
+# Calculator App 🧮
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple calculator web application built with React.  
+It allows you to perform basic arithmetic operations like addition, subtraction, multiplication, and division.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Responsive calculator UI
+- Supports addition, subtraction, multiplication, and division
+- Handles decimal numbers
+- Clear (`C`) and backspace (`<`) functionality
+- Displays errors for invalid operations
 
-## Expanding the ESLint configuration
+## How to Use
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Clone the repository:**
+   ```bash
+   git clone Calculator
+   cd Calculator/calculator
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the app:**
+   ```bash
+   npm start
+   ```
+
+## File Structure
+
+- `src/component/buttons.jsx` – Button component for calculator keys
+- `src/component/input_box.jsx` – Layout for calculator buttons
+- `src/component/value_box.jsx` – Displays the current value or result
+- `src/Container.jsx` – Main calculator logic and state
+- `src/index.css` – Styles for
+
+## Usage
+
+- Click the buttons to enter numbers and operators.
+- Use `C` to clear the input.
+- Use `<` to delete the last character.
+- Press `=` to get the result.
+
+---
+
+**Made with React and CSS.**
