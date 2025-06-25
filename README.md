@@ -3,8 +3,6 @@
 This is a simple calculator web application built with React.  
 It allows you to perform basic arithmetic operations like addition, subtraction, multiplication, and division.
 
----
-
 ## Features
 
 - **Responsive calculator UI**
@@ -13,14 +11,10 @@ It allows you to perform basic arithmetic operations like addition, subtraction,
 - **Clear (`C`) and backspace (`<`) functionality**
 - **Displays errors for invalid operations**
 
----
-
 ## Screenshot
 
 <!-- Add your screenshot here -->
 ![image](https://github.com/user-attachments/assets/2962ba28-eefe-4ee7-9fe4-3d27d80aaf3e)
-
----
 
 ## Link
 <https://web-project-react-calculator.vercel.app/>
@@ -43,8 +37,6 @@ It allows you to perform basic arithmetic operations like addition, subtraction,
    npm start
    ```
 
----
-
 ## File Structure
 
 - `src/component/buttons.jsx` – Button component for calculator keys
@@ -53,8 +45,6 @@ It allows you to perform basic arithmetic operations like addition, subtraction,
 - `src/Container.jsx` – Main calculator logic and state
 - `src/index.css` – Styles for the calculator UI
 
----
-
 ## Usage
 
 - Click the buttons to enter numbers and operators.
@@ -62,12 +52,8 @@ It allows you to perform basic arithmetic operations like addition, subtraction,
 - Use `<` to delete the last character.
 - Press `=` to get the result.
 
----
-
 ## Technologies Used
 
 - **React JS** (Functional Components + Hooks)
 - **HTML/CSS** for UI and layout
 - **JavaScript** for logic and evaluation
-
----
