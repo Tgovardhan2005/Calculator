@@ -14,7 +14,7 @@ It allows you to perform basic arithmetic operations like addition, subtraction,
 ---
 
 ## Link
-![](https://web-project-react-calculator.vercel.app/)
+<https://web-project-react-calculator.vercel.app/>
 
 ## Features
 
