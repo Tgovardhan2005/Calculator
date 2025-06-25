@@ -5,7 +5,7 @@ It allows you to perform basic arithmetic operations like addition, subtraction,
 
 ---
 
-## 📸 Screenshot
+## Screenshot
 
 <!-- Add your screenshot here -->
 ![image](https://github.com/user-attachments/assets/2962ba28-eefe-4ee7-9fe4-3d27d80aaf3e)
