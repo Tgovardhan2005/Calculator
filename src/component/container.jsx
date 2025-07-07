@@ -40,7 +40,13 @@ function Container(){
             return;
         }
         try{
-            setNumber(eval(number).toFixed(4));
+            const result = eval(number);
+            // Check if result is a whole number
+            if (Number.isInteger(result)) {
+                setNumber(result.toString());
+            } else {
+                setNumber(result.toFixed(4));
+            }
         }catch{
             setNumber("Error")
         }
