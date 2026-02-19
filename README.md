@@ -1,4 +1,4 @@
-# Calculator App 🧮
+# QuickCalc App 🧮
 
 This is a simple calculator web application built with React.
 It allows you to perform basic arithmetic operations like addition, subtraction, multiplication, and division.
